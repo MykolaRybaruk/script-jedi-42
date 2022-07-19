@@ -12,6 +12,4 @@ function trueOrFalse(val) {
 // 2) #7: if..else and ternary operator
 // http://www.codewars.com/kata/57202aefe8d6c514300001fd
 
-function saleHotdogs(n) {
-  return n * (n < 5 ? 100 : n < 10 ? 95 : 90);
-}
+const saleHotdogs = n => n * (n < 5 ? 100 : n < 10 ? 95 : 90);
