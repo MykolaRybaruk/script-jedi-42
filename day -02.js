@@ -95,3 +95,21 @@ function popElement(arr) {
   arr.pop();
   return arr;
 }
+
+
+
+
+// 4) Basic data types--Object
+// http://www.codewars.com/kata/571f1eb77e8954a812000837
+
+function animal(obj) {
+    return 'This ' + obj.color + ' ' + obj.name + ' has ' + obj.legs + ' legs.'
+}
+
+const dog = {
+  name: 'dog',
+  color: 'white',
+  legs: 4,
+};
+
+animal(dog);
