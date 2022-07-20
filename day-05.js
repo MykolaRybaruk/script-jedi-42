@@ -9,7 +9,7 @@ const correctTail = (body, tail) => body[body.length - 1] === tail[0] ? true : f
 const bonusTime = (salary, bonus) => bonus == true ? '\u00A3' + salary * 10 : '\u00A3' + salary;
 
 
-// Automorphic number
+// 3) Automorphic number
 // https://www.codewars.com/kata/5a58d889880385c2f40000aa
 
 function automorphic(n){
