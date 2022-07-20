@@ -20,3 +20,14 @@ function maxMultiple(divisor, bound){
 // https://www.codewars.com/kata/is-he-gonna-survive/train/javascript
 
 const hero = (bullets, dragons) => bullets >= dragons * 2;
+
+
+
+
+// 3) 5 without numbers
+// https://www.codewars.com/kata/59441520102eaa25260000bf
+
+function unusualFive() {
+  const arr = ['a', 'b', 'c', 'd', 'e'];
+  return arr.length;
+}
