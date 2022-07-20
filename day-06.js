@@ -12,3 +12,11 @@ function maxMultiple(divisor, bound){
   const max = Math.max(...arr);
   return max;
 }
+
+
+
+
+// 2) Is he gonna survive?
+// https://www.codewars.com/kata/is-he-gonna-survive/train/javascript
+
+const hero = (bullets, dragons) => bullets >= dragons * 2;
