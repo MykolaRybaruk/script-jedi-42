@@ -27,9 +27,9 @@ function padIt(str, n) {
 // 2) #10: loop statement --for
 // http://www.codewars.com/kata/5721a78c283129e416000999
 
-function pickIt(nums) { 
+function pickIt(arr) { 
   const odd = [], even = [];
-  for (const num of nums) {
+  for (const num of arr) {
     if (num % 2 === 0) {
       even.push(num);
     } else {
