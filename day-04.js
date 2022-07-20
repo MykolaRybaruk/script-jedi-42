@@ -38,3 +38,24 @@ function pickIt(arr) {
   }  
   return [odd, even];
 }
+
+
+
+
+// 3) #11: loop statement --break,continue
+// http://www.codewars.com/kata/5721c189cdd71194c1000b9b
+
+function grabDoll(dolls) {
+  const bag = [];
+  for (const doll of dolls) {
+     if (doll === 'Barbie doll' || doll === 'Hello Kitty') {
+       bag.push(doll);
+       if (bag.length === 3) {
+         break;
+       } else {
+         continue;
+       }
+     }
+  }
+  return bag;
+}
