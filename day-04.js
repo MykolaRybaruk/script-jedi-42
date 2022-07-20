@@ -59,3 +59,25 @@ function grabDoll(dolls) {
   }
   return bag;
 }
+
+
+
+
+// 4) #12: loop statement --for..in and for..of
+// https://www.codewars.com/kata/5722b3f0bd5583cf44001000/train/javascript
+
+function giveMeFive(obj) {
+  const five = [];
+  for (let key in obj) {
+    if (key.length === 5 && obj[key].length !== 5) {
+      five.push(key);
+    } else if (key.length !== 5 && obj[key].length === 5) {
+      five.push(obj[key]);
+    } else if (key.length === 5 && obj[key].length === 5) {
+      five.push(key, obj[key]);
+    }
+  }
+
+  return five;
+}
+
