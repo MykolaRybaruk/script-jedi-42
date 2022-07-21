@@ -2,8 +2,8 @@
 // http://www.codewars.com/kata/57216d4bcdd71175d6000560
 
 function padIt(str, n) {
-  let even = n % 2;
-  let half = n / 2;
+  const even = n % 2;
+  const half = n / 2;
   let i = 0;
   let leftSide = '';
   let rightSide = '';
