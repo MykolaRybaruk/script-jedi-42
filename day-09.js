@@ -34,3 +34,19 @@ function firstToLast(str, c) {
 
 
 
+
+
+// 3) #18: Methods of String object--concat() split() and its good friend join()"
+// http://www.codewars.com/kata/57280481e8118511f7000ffa
+
+function splitAndMerge(string, separator) {
+  const words = string.split(' ');
+  const letters = words.map((item) => {
+    return item.split('');
+  });
+  const fixed = letters.map((item) => {
+    return item.join(separator);
+  });
+
+  return fixed.join(' ');
+}
