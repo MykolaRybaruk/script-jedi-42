@@ -36,3 +36,17 @@ function colorOf(r, g, b) {
 }
 
 colorOf(255, 0, 0);
+
+// 3) Methods of Number object--toFixed(), toExponential() and toPrecision()
+// http://www.codewars.com/kata/57256064856584bc47000611
+
+function howManySmaller(arr, n) {
+  const lessThanN = [];
+  for (const val of arr) {
+    if (val.toFixed(2) < n) {
+      lessThanN.push(val);
+    }
+  }
+
+  return lessThanN.length;
+}
