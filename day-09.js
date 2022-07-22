@@ -7,12 +7,9 @@ function cutIt(arr) {
   });
   const minLength = Math.min(...length); //returns minimal length that will be used for slicing
   const result = arr.map((item) => {
-    if (item.length === minLength) {
-      return item;
-    } else {
-      return item.slice(0, minLength);
-    }
+    return item.substr(0, minLength);
   });
   return result;
 }
+
 
