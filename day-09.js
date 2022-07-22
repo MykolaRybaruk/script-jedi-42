@@ -19,17 +19,18 @@ function cutIt(arr) {
 // 2) #17: Methods of String object--indexOf(), lastIndexOf() and search()
 // https://www.codewars.com/kata/57277a31e5e51450a4000010/train/javascript
 
-function firstToLast(str,c){
+function firstToLast(str, c) {
   const firstIndex = str.search(c);
   const lastIndex = str.lastIndexOf(c);
 
   if (firstIndex != '-1' && lastIndex != '-1') {
     return lastIndex - firstIndex;
-    }
-  
+  }
+
   if (str.indexOf(c) == -1) {
     return str.indexOf(c);
   }
 }
+
 
 
