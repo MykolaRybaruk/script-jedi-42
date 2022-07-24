@@ -33,7 +33,6 @@ function topSecret(str) {
   return arr.join('');
 }
 
-topSecret('Khoor Zruog!');
 //question1: The top secret file number is...
 answer1="2350";
 //question2: Super agent's name is...
