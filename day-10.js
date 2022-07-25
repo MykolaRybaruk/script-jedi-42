@@ -39,3 +39,14 @@ answer1="2350";
 answer2="ZVQdfC";
 //question3: He stole the treasure is...
 answer3="bird's nest";
+
+
+
+
+// 3) #21: Methods of String object--trim() and the string template
+//  http://www.codewars.com/kata/5729b103dd8bac11a900119e
+
+function fiveLine(s) {
+  const trimmed = s.trim();
+  return `${trimmed}\n${trimmed}${trimmed}\n${trimmed}${trimmed}${trimmed}\n${trimmed}${trimmed}${trimmed}${trimmed}\n${trimmed}${trimmed}${trimmed}${trimmed}${trimmed}`;
+}
