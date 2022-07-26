@@ -5,7 +5,7 @@ function areEqual(s1, s2){
   const set1 = [...s1];
   const set2 = [...s2];
   
-  if (set1.every(item => s2.has(item)) && set1.size == set2.size) {
+  if (set1.every(item => s2.has(item)) && set1.length == set2.length) {
     return true;
   } else {
     return false;
