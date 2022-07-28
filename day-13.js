@@ -51,6 +51,6 @@ function filterByLocation(candidates, job) {
 
 function match(job, candidates) {
   const matchByEquity = filterByEquity(candidates, job);
-  const result = filterByLocation(matchByEquity, job);
-  return result;
+  const match = filterByLocation(matchByEquity, job);
+  return match;
 }
