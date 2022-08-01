@@ -18,7 +18,7 @@ function loopArr(arr, direction, steps) {
       let j = arr.shift();
       arr.push(j);
     }
-  } else if (direction === 'right') {
+  if (direction === 'right') {
     for (let i = 0; i < steps; i++) {
       let item = arr.pop();
       arr.unshift(item);
