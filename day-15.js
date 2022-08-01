@@ -1,6 +1,12 @@
-//
-//
+// 1) http://www.codewars.com/kata/572ab0cfa3af384df7000ff8
+// https://www.codewars.com/kata/572ab0cfa3af384df7000ff8/solutions/javascript
 
+let shuffleIt = (arr, ...indexes) => {
+  for (const changer of indexes) {
+    [arr[changer[0]], arr[changer[1]]] = [arr[changer[1]], arr[changer[0]]];
+  }
+  return arr;
+};
 
 
 
