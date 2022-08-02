@@ -17,3 +17,26 @@ function threeInOne(arr) {
   return result;
 }
 
+
+
+
+// #26: methods of arrayObject---map()
+// http://www.codewars.com/kata/572fdeb4380bb703fc00002c
+
+function isolateIt(arr) {
+  const chars = arr.map((x) => {
+    return x.split('');
+  });
+
+  chars.map((x) => {
+    if (x.length % 2 === 0) {
+      return x.splice(x.length / 2, 0, '|');
+    } else {
+      return x.splice(x.length / 2, 1, '|');
+    }
+  });
+
+  return chars.map((x) => x.join(''));
+}
+
+
