@@ -18,7 +18,10 @@ function threeInOne(arr) {
 }
 
 
+// #25: methods of arrayObject---reverse() and sort()
+// http://www.codewars.com/kata/572df796914b5ba27c000c90
 
+?
 
 // #26: methods of arrayObject---map()
 // http://www.codewars.com/kata/572fdeb4380bb703fc00002c
