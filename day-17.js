@@ -12,3 +12,28 @@ function countGrade(scores) {
   return result;
 }
 
+
+
+
+// #28: methods of arrayObject---every() and some()
+// http://www.codewars.com/kata/57308546bd9f0987c2000d07
+
+function mirrorImage(arr) {
+  const result = [-1, -1];
+  const reversed = arr.map((x) => {
+    return [x].toString().split('').reverse().join('');
+  });
+  arr.some((x, i) => {
+    if (arr[i] == reversed[i + 1]) {
+      const a = arr[i];
+      const b = arr[i + 1];
+      result.length = 0;
+      result.push(a, b);
+      return true;
+    }
+  });
+
+  return result;
+}
+
+
