@@ -21,7 +21,23 @@ function threeInOne(arr) {
 // #25: methods of arrayObject---reverse() and sort()
 // http://www.codewars.com/kata/572df796914b5ba27c000c90
 
-?
+function sortIt(arr) {
+  const str = [...arr];
+  return str.sort((a, b) => {
+    const strone = counter(arr, a) - counter(arr, b); // a-b ascending sort
+    return strone === 0 ? b - a : strone;
+  }); // b-a descending sort
+}
+function counter(arr, elcounter) {
+  return arr.filter((el) => el === elcounter).length;
+}
+
+
+
+
+
+
+
 
 // #26: methods of arrayObject---map()
 // http://www.codewars.com/kata/572fdeb4380bb703fc00002c
