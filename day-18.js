@@ -55,3 +55,54 @@ function tailAndHead(arr) {
   return result;
 }
 
+
+
+
+
+
+// #36 methods of Math -- random()
+// https://www.codewars.com/kata/5735956413c2054a680009ec
+
+function rndCode() {
+  const result = [];
+
+  //getting two random uppercase letters
+  const lettersCode = [];
+  const minCharCode = 65;
+  const maxCharCode = 77;
+
+  for (let i = 0; i < 2; i++) {
+    const randomCode = ~~(
+      (maxCharCode - minCharCode) * Math.random() +
+      minCharCode
+    );
+    lettersCode.push(randomCode);
+  }
+
+  const letters = lettersCode.map((x) => {
+    result.push(String.fromCharCode(x));
+    return x;
+  });
+
+  // Getting four random numbers
+  const minNum = 1000;
+  const maxNum = 9999;
+
+  const numbers = ~~((maxNum - minNum) * Math.random() + minNum);
+  result.push(numbers);
+
+  //getting two random symbols
+  const minSymbolCode = 33;
+  const maxSymbolCode = 47;
+
+  for (let i = 0; i < 2; i++) {
+    const symbolCode = ~~(
+      (maxSymbolCode - minSymbolCode) * Math.random() +
+      minSymbolCode
+    );
+
+    result.push(String.fromCharCode(symbolCode));
+  }
+
+  return result.join('');
+}
