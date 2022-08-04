@@ -4,8 +4,8 @@
 function countAnimals(animals, count) {
   const result = [];
   for (const animal of count) {
-    const a = (animals.match(new RegExp(animal, 'g')) || []).length;
-    result.push(a);
+    const match = (animals.match(new RegExp(animal, 'g')) || []).length;
+    result.push(match);
   }
   return result;
 }
