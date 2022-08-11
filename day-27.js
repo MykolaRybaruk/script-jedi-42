@@ -10,3 +10,21 @@ function buildFun(n){
 	}
 	return res
 }
+
+
+// Shifty closures
+// https://www.codewars.com/kata/shifty-closures/train/javascript
+
+function create_greeter(name) {
+  return function () {
+    return 'Hello, ' + name + '!';
+  };
+}
+
+let name = 'Abe';
+const greet_abe = create_greeter(name);
+greet_abe();
+
+name = 'Ben';
+const greet_ben = create_greeter(name);
+greet_ben();
