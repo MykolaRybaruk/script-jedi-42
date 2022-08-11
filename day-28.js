@@ -6,3 +6,20 @@ function always (n) {
     return n;
   }
 }
+
+
+
+
+// [JEDI LEVEL] Pure function
+// https://www.codewars.com/kata/59bdbe9d46038724ca0000b9/train/javascript
+
+const state = {
+  modifier: 2,
+};
+
+function solution(arr, options) {
+  const arrCopy = [...arr];
+  const modifier = options.modifier * 2;
+  return arrCopy.map((x) => x + modifier);
+}
+
