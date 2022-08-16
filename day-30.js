@@ -12,3 +12,23 @@ function isSantaClausable(obj) {
     return false;
   }
 }
+
+
+
+// Cylon Evolution
+// http://www.codewars.com/kata/cylon-evolution
+
+function Cylon(model){
+  this.model = model;
+  this.attack = function () {
+    return 'Destroy all humans!';
+  }
+}
+
+
+function HumanSkin(model){
+  this.infiltrate = () => 'Infiltrate the colonies';
+  this.model = model;
+}
+
+HumanSkin.prototype = new Cylon();
