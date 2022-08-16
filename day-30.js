@@ -32,3 +32,11 @@ function HumanSkin(model){
 }
 
 HumanSkin.prototype = new Cylon();
+
+
+// Call function using apply
+// http://www.codewars.com/kata/write-javascripts-call-function-using-apply
+
+Function.prototype.call = function(a, ...b) {
+  return this.apply(a, b);
+}
