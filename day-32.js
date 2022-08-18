@@ -26,12 +26,12 @@ class NamedOne {
   }
 
   set fullName(text) {
-    let arr = text.split(' ');
-    if (arr.length <= 1) {
+    const fullNameWords = text.split(' ');
+    if (fullNameWords.length <= 1) {
       return true;
     } else {
-      this.firstName = arr[0];
-      this.lastName = arr[1];
+      this.firstName = fullNameWords[0];
+      this.lastName = fullNameWords[1];
     }
   }
 }
