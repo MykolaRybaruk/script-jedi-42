@@ -16,3 +16,21 @@ Array.prototype.reduce = function(process, initial) {
   }
   return reduction;
 }
+
+
+
+
+// [JEDI LEVEL] Deep freeze
+// https://www.codewars.com/kata/52ed80dfe7bf9ae61d000056
+Object.deepFreeze = function (object) {
+  Object.freeze(object);
+  
+    for (const key in object) {
+      if (typeof object[key] === 'object') {
+        return Object.freeze(object[key]);
+      }
+    }
+  
+  return Object.deepFreeze(object[key]);
+  
+};
