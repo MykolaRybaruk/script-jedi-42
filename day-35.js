@@ -18,3 +18,17 @@ class Animal {
       return `${this.name} is a ${this.type}`;}
   };
 } 
+
+
+
+
+// [JEDI LEVEL] Power of bind
+// http://www.codewars.com/kata/power-bind
+
+Function.prototype.bind = function (ctx) {
+  const func = this;
+  return function (...args) {
+    const rightCtx = this === global ? ctx : this;
+    return func.apply(rightCtx, args);
+  }
+};
