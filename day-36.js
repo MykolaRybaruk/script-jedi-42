@@ -36,7 +36,7 @@ async function submitOrder(user) {
 
 
 
-// This isn't what you think!
+// [JEDI LEVEL] This isn't what you think!
 // https://www.codewars.com/kata/5876a9f6b09010b1b4000191/train/javascript
 
 ShoppingCart.prototype.addButtonClicked = function(item) {
